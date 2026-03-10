@@ -20,9 +20,9 @@ body {
     @apply text-5xl md:text-7xl font-black uppercase tracking-tight leading-none;
   }
   .btn-primary {
-    @apply inline-block bg-[#8B0000] text-white font-black uppercase tracking-widest px-8 py-4 text-lg border-2 border-[#8B0000] hover:bg-white hover:text-[#8B0000] transition-all duration-200;
+    @apply inline-block bg-crimson text-white font-black uppercase tracking-widest px-8 py-4 text-lg border-2 border-crimson hover:bg-white hover:text-crimson transition-all duration-200;
   }
   .btn-outline {
-    @apply inline-block bg-transparent text-white font-black uppercase tracking-widest px-8 py-4 text-lg border-2 border-white hover:bg-white hover:text-[#8B0000] transition-all duration-200;
+    @apply inline-block bg-transparent text-white font-black uppercase tracking-widest px-8 py-4 text-lg border-2 border-white hover:bg-white hover:text-crimson transition-all duration-200;
   }
 }
