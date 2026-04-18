@@ -3,72 +3,122 @@
 // Edit this file to update all site content.
 // ============================================================
 
+export const WAHOO_TRACKING_URL = 'https://www.wahooligan.com/users/live/-3Hy8dbaWidt3w4Qaoze2w'
+export const JUSTGIVING_URL = 'https://www.justgiving.com/page/sadcycle-2026-for-gosh'
+export const STRAVA_URL = 'https://strava.app.link/Fp4l1sjSr2b'
+export const RIDEWITHGPS_URL = 'https://ridewithgps.com/collections/6160629'
+export const YEAR_STARTED = '2024'
+
 export const siteConfig = {
   name: 'SAD Cycling',
-  tagline: 'Suffering for a good cause since 2025',
-  // TODO: Update with real charity details
-  charityName: 'Charity Name TBC',
-  charityUrl: '#', // TODO: Replace with real donation URL
-  donateUrl: '#',  // TODO: Replace with JustGiving / fundraising URL
-  shopUrl: '#',    // TODO: Replace with Printify or merch shop URL
-  trackerUrl: '#', // TODO: Replace with Garmin/Wahoo live share URL
-  socialInstagram: '#', // TODO: Add Instagram URL
-  socialStrava: '#',    // TODO: Add Strava club URL
+  tagline: 'Suffering for a good cause since 2024',
+  charityName: 'Great Ormond Street Hospital',
+  charityUrl: 'https://www.gosh.nhs.uk/',
+  donateUrl: JUSTGIVING_URL,
+  shopUrl: '#', // TODO: Replace with Printify or merch shop URL
+  trackerUrl: WAHOO_TRACKING_URL,
+  socialStrava: STRAVA_URL,
   fundraisingGoal: '£10,000',
-  currentTotal: '£3,420',   // TODO: Replace with live figure or embed
+  currentTotal: '£3,420', // TODO: Replace with live figure or embed
   numberOfRiders: 5,
 }
 
 export const routeDays = [
-  { day: 1, start: 'London', end: 'Brighton', distance: 85, elevation: 1200 },
-  { day: 2, start: 'Brighton', end: 'Eastbourne', distance: 72, elevation: 980 },
-  { day: 3, start: 'Eastbourne', end: 'Hastings', distance: 60, elevation: 1100 },
-  { day: 4, start: 'Hastings', end: 'Folkestone', distance: 78, elevation: 1350 },
-  { day: 5, start: 'Folkestone', end: 'Dover', distance: 45, elevation: 650 },
-  { day: 6, start: 'Dover', end: 'Finish Line', distance: 95, elevation: 1500 },
-]
-
-export const sleepTracker = [
-  { night: 1, date: '12 May 2025', location: 'Brighton', accommodation: 'The Seasider Inn', status: 'CONFIRMED' },
-  { night: 2, date: '13 May 2025', location: 'Eastbourne', accommodation: 'Grand Hotel Eastbourne', status: 'CONFIRMED' },
-  { night: 3, date: '14 May 2025', location: 'Hastings', accommodation: 'TBC', status: 'TBC' },
-  { night: 4, date: '15 May 2025', location: 'Folkestone', accommodation: 'Channel View B&B', status: 'CONFIRMED' },
-  { night: 5, date: '16 May 2025', location: 'Dover', accommodation: 'TBC', status: 'TBC' },
-  { night: 6, date: '17 May 2025', location: 'Finish', accommodation: 'Home', status: 'CONFIRMED' },
+  {
+    day: 1,
+    date: 'Wed 20 May',
+    start: 'Marseille',
+    end: 'Saint-Raphaël',
+    distance: 162,
+    elevation: 1479,
+    note: 'Longest and hardest day. Big climb through the Estérel. Early start essential.',
+  },
+  {
+    day: 2,
+    date: 'Thu 21 May',
+    start: 'Saint-Raphaël',
+    end: 'Nice',
+    distance: 72,
+    elevation: 643,
+    note: 'Shortest day — enjoy the Riviera, arrive early, explore Nice in the evening.',
+  },
+  {
+    day: 3,
+    date: 'Fri 22 May',
+    start: 'Nice',
+    end: 'Alassio',
+    distance: 106.2,
+    elevation: 1429,
+    note: 'Crosses into Italy via Monaco, Menton, San Remo.',
+  },
+  {
+    day: 4,
+    date: 'Sat 23 May',
+    start: 'Alassio',
+    end: 'Genoa',
+    distance: 97.1,
+    elevation: 826,
+    note: 'Final push along the Ligurian coast. Celebratory dinner in Genoa!',
+  },
 ]
 
 export const riders = [
-  { name: 'Rider One', nickname: 'The Sufferer', bio: 'Has never finished a sportive but owns 6 bikes', image: null },
-  { name: 'Rider Two', nickname: 'The Climber', bio: 'Claims to love hills. Has never seen a hill.', image: null },
-  { name: 'Rider Three', nickname: 'The Navigator', bio: 'Once got lost on a turbo trainer', image: null },
-  { name: 'Rider Four', nickname: 'The Mechanic', bio: 'Fixes everyone else\'s bikes. Walks everywhere.', image: null },
-  { name: 'Rider Five', nickname: 'The Domestique', bio: 'Carries everyone\'s snacks. Eats them too.', image: null },
+  {
+    name: 'Stefano',
+    nickname: 'The Hedonist',
+    bio: 'In it for the food, the views, and the post-ride aperitivo. The cycling is just an inconvenience.',
+    image: '/stefano.png',
+  },
+  {
+    name: 'Aurelio',
+    nickname: 'The Reluctant Martyr',
+    bio: 'Does not like sport. This is grimly accurate. Will suffer more than anyone and complain least.',
+    image: '/aurelio.jpeg',
+  },
+  {
+    name: 'Mimmo',
+    nickname: 'The Captain',
+    displayNameNote: '(within graph)',
+    bio: 'Organises everything, blames everyone else when it goes wrong. Keeps the wheels turning.',
+    image: '/mimmo.jpeg',
+  },
+  {
+    name: 'Julian',
+    nickname: 'The Spoiled King',
+    bio: 'Expects support vehicles, five-star hotels and a personal masseuse. Gets none of these.',
+    image: '/julien.jpeg',
+  },
+  {
+    name: 'Gigi',
+    nickname: 'The Wajone',
+    bio: 'Unexplainable energy. Unknown origin. Somehow always at the front.',
+    image: '/gigi.heic',
+  },
 ]
 
 export const merch = [
-  { name: 'SAD Cycling Jersey', price: '£65', description: 'Full-zip race cut. Look fast, go slow.', image: null },
-  { name: 'Suffer More Cap', price: '£22', description: 'Cycling cap. One size. No excuses.', image: null },
-  { name: 'Bib Shorts', price: '£80', description: 'Because chamois matters. Trust us.', image: null },
-  { name: 'Water Bottle', price: '£15', description: '750ml. Holds water. Sometimes wine.', image: null },
+  {
+    name: 'SAD Cycling Jersey',
+    price: '£65',
+    description: 'Full-zip race cut. Look fast, go slow.',
+    image: null,
+    shopUrl: '#', // TODO: Replace with real Printify product URL
+  },
 ]
 
-export const dispatches = [
+export const pastRides = [
   {
-    date: '1 March 2025',
-    title: 'Why Are We Doing This?',
-    excerpt: 'A question we ask ourselves daily. The honest answer: no one really knows. But the bikes are bought and the legs are (vaguely) trained.',
-    slug: '#', // TODO: Link to blog post or CMS entry
+    city: 'Paris',
+    image: '/paris.jpeg',
+    flavour:
+      'Tired legs. Questionable decisions. A finish line that kept moving. We made it anyway, and the croissants were worth every climb.',
+    link: STRAVA_URL,
   },
   {
-    date: '10 February 2025',
-    title: 'Training Diary: Week 4',
-    excerpt: 'Four weeks in. One abandoned ride, two punctures and a very public fall in a car park. Progress.',
-    slug: '#',
-  },
-  {
-    date: '20 January 2025',
-    title: 'Route Revealed',
-    excerpt: 'We\'ve mapped the route. It\'s longer than planned. There are more hills than we hoped. We\'re doing it anyway.',
-    slug: '#',
+    city: 'Amsterdam',
+    image: '/amsterdam.jpeg',
+    flavour:
+      'Flat roads, strong headwinds, and the collective delusion that cycling to Amsterdam was somehow a good idea. It was.',
+    link: STRAVA_URL,
   },
 ]

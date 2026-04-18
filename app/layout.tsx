@@ -9,10 +9,13 @@ const barlow = Barlow_Condensed({
 })
 
 export const metadata: Metadata = {
-  title: 'SAD Cycling — May 2025',
+  title: 'SAD Cycling — May 2026',
   description: 'A charity cycling adventure. Follow the route, support the cause.',
+  icons: {
+    icon: '/favicon.png',
+  },
   openGraph: {
-    title: 'SAD Cycling — May 2025',
+    title: 'SAD Cycling — May 2026',
     description: 'A charity cycling adventure. Follow the route, support the cause.',
   },
 }

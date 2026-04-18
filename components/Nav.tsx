@@ -1,17 +1,16 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { siteConfig } from '@/lib/content'
+import { JUSTGIVING_URL } from '@/lib/content'
 
 const navLinks = [
   { label: 'What', href: '#what' },
-  { label: 'Route', href: '#route' },
-  { label: 'Sleep', href: '#sleep' },
   { label: 'Track', href: '#track' },
   { label: 'Charity', href: '#charity' },
+  { label: 'Route', href: '#route' },
   { label: 'Riders', href: '#riders' },
   { label: 'Merch', href: '#merch' },
-  { label: 'Donate', href: siteConfig.donateUrl },
+  { label: 'Donate', href: JUSTGIVING_URL, external: true },
 ]
 
 export default function Nav() {
@@ -49,6 +48,8 @@ export default function Nav() {
             <a
               key={link.label}
               href={link.href}
+              target={link.external ? '_blank' : undefined}
+              rel={link.external ? 'noopener noreferrer' : undefined}
               className={`font-bold uppercase text-sm tracking-widest transition-colors duration-200 ${
                 active === link.href.replace('#', '')
                   ? 'text-white border-b-2 border-white'

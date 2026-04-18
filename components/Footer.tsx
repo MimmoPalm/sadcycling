@@ -1,4 +1,4 @@
-import { siteConfig } from '@/lib/content'
+import { siteConfig, WAHOO_TRACKING_URL, STRAVA_URL, JUSTGIVING_URL } from '@/lib/content'
 
 export default function Footer() {
   return (
@@ -15,18 +15,27 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Social links */}
+          {/* Links */}
           <div>
             <div className="font-black uppercase text-white/60 tracking-widest text-xs mb-4">
               Follow the Suffering
             </div>
             <div className="space-y-2">
-              {/* TODO: Add real social URLs */}
-              <a href={siteConfig.socialInstagram} className="block text-white font-bold uppercase tracking-widest text-sm hover:text-white/60 transition-colors">
-                Instagram
-              </a>
-              <a href={siteConfig.socialStrava} className="block text-white font-bold uppercase tracking-widest text-sm hover:text-white/60 transition-colors">
+              <a
+                href={STRAVA_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-white font-bold uppercase tracking-widest text-sm hover:text-white/60 transition-colors"
+              >
                 Strava
+              </a>
+              <a
+                href={WAHOO_TRACKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-white font-bold uppercase tracking-widest text-sm hover:text-white/60 transition-colors"
+              >
+                Live Tracking
               </a>
             </div>
           </div>
@@ -36,8 +45,12 @@ export default function Footer() {
             <div className="font-black uppercase text-white/60 tracking-widest text-xs mb-4">
               Support the Cause
             </div>
-            {/* TODO: Replace href with real donation URL */}
-            <a href={siteConfig.donateUrl} className="btn-outline inline-block">
+            <a
+              href={JUSTGIVING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline inline-block"
+            >
               Donate Now
             </a>
           </div>
@@ -45,10 +58,10 @@ export default function Footer() {
 
         <div className="border-t border-white/20 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-white/40 text-xs uppercase tracking-widest font-bold">
-            © 2025 SAD Cycling. All rights reserved.
+            &copy; 2024 SAD Cycling. All rights reserved.
           </p>
           <p className="text-white/40 text-xs font-bold">
-            Built with ❤️ and sore legs
+            Built with sore legs
           </p>
         </div>
       </div>
