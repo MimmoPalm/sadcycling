@@ -8,44 +8,45 @@ export default function Merch() {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
-  // Only one product displayed — TODO: add real Printify product URL to lib/content.ts
   const product = merch[0]
 
   return (
-    <section id="merch" className="bg-white py-24 px-4">
+    <section id="merch" className="bg-[#F3ECE5] py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <p className="text-crimson font-black uppercase tracking-widest text-sm mb-4">
-          Look the Part
-        </p>
-        <h2 className="section-heading text-crimson mb-16">
-          Official Merch
-        </h2>
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 mb-8">
+          <div>
+            <p className="text-[#855832] font-black uppercase tracking-widest text-xs mb-1">
+              Look the Part
+            </p>
+            <h2 className="text-[#11151C] font-black uppercase text-3xl tracking-widest">
+              Official Merch
+            </h2>
+          </div>
+        </div>
 
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 32 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ type: 'spring', stiffness: 100, damping: 20 }}
-          className="max-w-xs"
+          className="max-w-sm"
         >
-          <div className="group border-2 border-gray-200 hover:border-crimson transition-colors">
-            {/* TODO: Replace with real product image from Printify */}
-            <div className="aspect-square bg-off-white flex items-center justify-center border-b-2 border-gray-200 group-hover:border-crimson transition-colors">
-              <div className="text-center text-gray-400">
-                <p className="text-xs font-bold uppercase tracking-widest">Product image TBC</p>
+          <div className="group border-2 border-[#11151C]/20 hover:border-[#855832] transition-colors flex gap-0 sm:gap-0">
+            <div className="bg-[#11151C]/5 flex items-center justify-center p-8 min-w-[100px]">
+              <div className="text-center text-[#11151C]/30">
+                <p className="text-xs font-bold uppercase tracking-widest">Image TBC</p>
               </div>
             </div>
-            <div className="p-6">
-              <div className="text-lg font-black uppercase text-gray-900 mb-1">{product.name}</div>
-              <div className="text-gray-500 text-sm mb-4">{product.description}</div>
-              <div className="flex items-center justify-between">
-                <span className="text-2xl font-black text-crimson">{product.price}</span>
-                {/* TODO: Replace href with real Printify product URL */}
+            <div className="p-5 flex flex-col justify-center">
+              <div className="text-base font-black uppercase text-[#11151C] mb-1">{product.name}</div>
+              <div className="text-[#11151C]/60 text-sm mb-3">{product.description}</div>
+              <div className="flex items-center gap-4">
+                <span className="text-xl font-black text-[#855832]">{product.price}</span>
                 <a
                   href={product.shopUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-crimson text-white font-black uppercase tracking-widest px-4 py-2 text-sm hover:bg-[#6B0000] transition-colors"
+                  className="bg-[#11151C] text-[#F3ECE5] font-black uppercase tracking-widest px-4 py-2 text-xs hover:bg-[#855832] transition-colors"
                 >
                   Buy Now
                 </a>

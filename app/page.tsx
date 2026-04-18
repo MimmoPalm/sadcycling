@@ -16,8 +16,8 @@ export default function Home() {
       <main>
         <Hero />
         <WhatIsSad />
-        <LiveTracking />
         <TheCharity />
+        <LiveTracking />
         <TheRoute />
         <MeetTheRiders />
         <Merch />

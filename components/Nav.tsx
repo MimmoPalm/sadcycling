@@ -5,8 +5,8 @@ import { JUSTGIVING_URL } from '@/lib/content'
 
 const navLinks = [
   { label: 'What', href: '#what' },
-  { label: 'Track', href: '#track' },
   { label: 'Charity', href: '#charity' },
+  { label: 'Track', href: '#track' },
   { label: 'Route', href: '#route' },
   { label: 'Riders', href: '#riders' },
   { label: 'Merch', href: '#merch' },
@@ -38,10 +38,15 @@ export default function Nav() {
   }, [])
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-crimson shadow-lg' : 'bg-transparent'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[#11151C] shadow-lg' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-        <a href="#" className="font-black uppercase text-white text-xl tracking-widest">
-          SAD Cycling
+        <a href="#" className="flex items-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo-no-bg.png"
+            alt="SAD Cycling — Pedal fast chase joy"
+            className="h-10 w-auto"
+          />
         </a>
         <div className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (

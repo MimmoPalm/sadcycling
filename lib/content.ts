@@ -66,33 +66,33 @@ export const riders = [
   {
     name: 'Stefano',
     nickname: 'The Hedonist',
-    bio: 'In it for the food, the views, and the post-ride aperitivo. The cycling is just an inconvenience.',
-    image: '/stefano.png',
+    bio: 'In it for the food, the views, and the post-ride Aperol Spritz. Has been known to scout restaurants before checking the elevation profile.',
+    image: '/stefano.jpeg',
   },
   {
     name: 'Aurelio',
     nickname: 'The Reluctant Martyr',
-    bio: 'Does not like sport. This is grimly accurate. Will suffer more than anyone and complain least.',
+    bio: "Will suffer more than anyone. Won't complain — he's just quietly managing seventeen other life crises from his phone. He'd honestly rather be on his couch in East London sorting them out.",
     image: '/aurelio.jpeg',
   },
   {
-    name: 'Mimmo',
+    name: 'Domenico',
+    displayName: 'Domenico (aka Mimmo)',
     nickname: 'The Captain',
-    displayNameNote: '(within graph)',
-    bio: 'Organises everything, blames everyone else when it goes wrong. Keeps the wheels turning.',
+    bio: 'Planned the route, booked the hotels, and takes full responsibility for everything that goes right. When it goes wrong, he blames the weather, the GPS, and increasingly, artificial intelligence.',
     image: '/mimmo.jpeg',
   },
   {
     name: 'Julian',
     nickname: 'The Spoiled King',
-    bio: 'Expects support vehicles, five-star hotels and a personal masseuse. Gets none of these.',
+    bio: 'Insists on a proper bed, a hot shower, and a functioning coffee machine. Has not yet explained why he keeps coming back.',
     image: '/julien.jpeg',
   },
   {
-    name: 'Gigi',
+    name: 'Frezz',
     nickname: 'The Wajone',
-    bio: 'Unexplainable energy. Unknown origin. Somehow always at the front.',
-    image: '/gigi.heic',
+    bio: "The youngest. From Naples. The nickname is untranslatable but everyone from Naples understands it. Our mascot. Don't tell him that.",
+    image: '/frezz.png',
   },
 ]
 

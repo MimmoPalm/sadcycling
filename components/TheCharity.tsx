@@ -32,7 +32,7 @@ export default function TheCharity() {
           variants={containerVariants}
           initial="hidden"
           animate={inView ? 'visible' : 'hidden'}
-          className="text-center mb-16"
+          className="text-center"
         >
           <motion.p
             variants={itemVariants}
@@ -77,7 +77,25 @@ export default function TheCharity() {
             </p>
           </motion.div>
 
-          <motion.div variants={itemVariants}>
+          {/* Donation total */}
+          <motion.div
+            variants={itemVariants}
+            className="mb-8"
+          >
+            <div className="inline-block border-2 border-[#855832] px-10 py-6 mb-6">
+              <div className="text-[#F3ECE5]/50 font-black uppercase tracking-widest text-xs mb-2">
+                Total raised
+              </div>
+              <div className="text-[#F3ECE5] font-black text-4xl mb-1">
+                £0 raised so far
+              </div>
+              <div className="text-[#F3ECE5]/50 text-sm">
+                Be the first to donate
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div variants={itemVariants} className="mb-4">
             <a
               href={JUSTGIVING_URL}
               target="_blank"
@@ -87,28 +105,13 @@ export default function TheCharity() {
               Donate Now
             </a>
           </motion.div>
-        </motion.div>
 
-        {/* JustGiving Widget */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-          transition={{ type: 'spring', stiffness: 100, damping: 20, delay: 0.5 }}
-          className="w-full"
-        >
-          {/* JustGiving iframe widget — attempt embed */}
-          {/* TODO: If widget fails to render, replace with static donation total placeholder */}
-          <iframe
-            src="https://widgets.justgiving.com/fundraisingpage/sadcycle-2026-for-gosh"
-            title="JustGiving fundraising page"
-            width="100%"
-            height="200"
-            className="border-0 w-full"
-            allowFullScreen
-          />
-          <p className="text-center text-[#F3ECE5]/30 text-xs font-bold uppercase tracking-widest mt-4">
-            Live total updated daily
-          </p>
+          <motion.p
+            variants={itemVariants}
+            className="text-[#F3ECE5]/30 text-xs font-bold uppercase tracking-widest"
+          >
+            Total updates on JustGiving
+          </motion.p>
         </motion.div>
       </div>
     </section>

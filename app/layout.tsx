@@ -12,7 +12,9 @@ export const metadata: Metadata = {
   title: 'SAD Cycling — May 2026',
   description: 'A charity cycling adventure. Follow the route, support the cause.',
   icons: {
-    icon: '/favicon.png',
+    icon: '/logo-item.png',
+    shortcut: '/logo-item.png',
+    apple: '/logo-item.png',
   },
   openGraph: {
     title: 'SAD Cycling — May 2026',

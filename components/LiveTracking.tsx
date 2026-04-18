@@ -9,51 +9,52 @@ export default function LiveTracking() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="track" className="bg-[#11151C] py-24 px-4 text-center">
-      <div ref={ref} className="max-w-3xl mx-auto">
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ type: 'spring', stiffness: 100, damping: 20 }}
-          className="text-[#855832] font-black uppercase tracking-widest text-sm mb-4"
-        >
-          GPS Live
-        </motion.p>
-        <motion.h2
-          initial={{ opacity: 0, y: 24 }}
-          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
-          transition={{ type: 'spring', stiffness: 100, damping: 20, delay: 0.1 }}
-          className="section-heading text-[#F3ECE5] mb-6"
-        >
-          Live Tracking
-        </motion.h2>
-        <motion.p
-          initial={{ opacity: 0, y: 24 }}
-          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
-          transition={{ type: 'spring', stiffness: 100, damping: 20, delay: 0.2 }}
-          className="text-[#F3ECE5]/60 text-lg font-semibold mb-12 max-w-xl mx-auto leading-relaxed"
-        >
-          Track us in real time during the ride. Watch our progress, see where we&apos;ve ground to a halt, and judge us for our pace accordingly.
-        </motion.p>
+    <section id="track" className="bg-[#855832] py-12 px-4">
+      <div ref={ref} className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-8">
+        <div className="text-center sm:text-left">
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
+            transition={{ type: 'spring', stiffness: 100, damping: 20 }}
+            className="text-[#F3ECE5]/70 font-black uppercase tracking-widest text-xs mb-2"
+          >
+            GPS Live · May 2026
+          </motion.p>
+          <motion.h2
+            initial={{ opacity: 0, y: 16 }}
+            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
+            transition={{ type: 'spring', stiffness: 100, damping: 20, delay: 0.08 }}
+            className="text-[#F3ECE5] font-black uppercase text-2xl sm:text-3xl tracking-widest mb-2"
+          >
+            Track us live
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
+            transition={{ type: 'spring', stiffness: 100, damping: 20, delay: 0.16 }}
+            className="text-[#F3ECE5]/70 text-base font-semibold max-w-sm"
+          >
+            Watch our progress in real time. Judge our pace accordingly.
+          </motion.p>
+        </div>
 
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
-          transition={{ type: 'spring', stiffness: 100, damping: 20, delay: 0.3 }}
-          className="relative inline-block"
+          initial={{ opacity: 0, scale: 0.92 }}
+          animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.92 }}
+          transition={{ type: 'spring', stiffness: 100, damping: 20, delay: 0.24 }}
+          className="relative inline-block flex-shrink-0"
         >
-          {/* Pulse ring — infinite animation behind button */}
           <motion.span
             animate={{
               scale: [1, 1.18, 1],
-              opacity: [0.6, 0, 0.6],
+              opacity: [0.5, 0, 0.5],
             }}
             transition={{
               duration: 2,
               repeat: Infinity,
               ease: 'easeInOut',
             }}
-            className="absolute inset-0 bg-[#855832] pointer-events-none"
+            className="absolute inset-0 bg-[#F3ECE5] pointer-events-none"
             aria-hidden="true"
           />
           <motion.a
@@ -63,20 +64,11 @@ export default function LiveTracking() {
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
             transition={{ type: 'spring', stiffness: 100, damping: 20 }}
-            className="relative inline-block bg-[#855832] text-[#F3ECE5] font-black uppercase tracking-widest px-14 py-6 text-2xl border-2 border-[#855832] hover:bg-[#F3ECE5] hover:text-[#855832] transition-colors duration-200 z-10"
+            className="relative inline-block bg-[#11151C] text-[#F3ECE5] font-black uppercase tracking-widest px-10 py-4 text-base border-2 border-[#11151C] hover:bg-[#F3ECE5] hover:text-[#11151C] transition-colors duration-200 z-10"
           >
             Open Live Tracker
           </motion.a>
         </motion.div>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : { opacity: 0 }}
-          transition={{ delay: 0.6 }}
-          className="text-[#F3ECE5]/30 text-xs font-bold uppercase tracking-widest mt-8"
-        >
-          Live from May 2026 · Wahoo GPS Tracking
-        </motion.p>
       </div>
     </section>
   )
