@@ -83,7 +83,7 @@ export const riders = [
     image: '/mimmo.jpeg',
   },
   {
-    name: 'Julian',
+    name: 'Julien',
     nickname: 'The Spoiled King',
     bio: 'Insists on a proper bed, a hot shower, and a functioning coffee machine. Has not yet explained why he keeps coming back.',
     image: '/julien.jpeg',

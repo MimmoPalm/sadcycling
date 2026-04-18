@@ -44,12 +44,12 @@ export default function PastRides() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="past-rides" className="bg-[#855832] py-24 px-4">
+    <section id="past-rides" className="bg-[#F3ECE5] py-24 px-4">
       <div className="max-w-7xl mx-auto">
-        <p className="text-[#F3ECE5]/60 font-black uppercase tracking-widest text-sm mb-4">
+        <p className="text-[#11151C]/50 font-black uppercase tracking-widest text-sm mb-4">
           Where We&apos;ve Been
         </p>
-        <h2 className="section-heading text-[#F3ECE5] mb-16">
+        <h2 className="section-heading text-[#11151C] mb-16">
           Past Rides
         </h2>
 
@@ -67,7 +67,7 @@ export default function PastRides() {
               href={ride.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group block relative overflow-hidden border-2 border-[#F3ECE5]/20 hover:border-[#F3ECE5] transition-colors"
+              className="group block relative overflow-hidden border-2 border-[#11151C]/20 hover:border-[#11151C] transition-colors"
               whileHover={{ scale: 1.02 }}
               transition={{ type: 'spring', stiffness: 100, damping: 20 }}
             >
@@ -80,7 +80,7 @@ export default function PastRides() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#11151C] via-[#11151C]/30 to-transparent" />
                 {/* Year badge */}
-                <div className="absolute top-4 left-4 bg-[#855832] text-[#F3ECE5] font-black uppercase tracking-widest text-sm px-3 py-1">
+                <div className="absolute top-4 left-4 bg-[#c21717] text-white font-black uppercase tracking-widest text-sm px-3 py-1">
                   {ride.year}
                 </div>
               </div>
@@ -89,14 +89,14 @@ export default function PastRides() {
                   <div className="text-[#F3ECE5] font-black uppercase text-3xl">
                     {ride.city}
                   </div>
-                  <div className="text-[#855832] font-black text-lg">
+                  <div className="text-[#c21717] font-black text-lg">
                     {ride.year}
                   </div>
                 </div>
                 <p className="text-[#F3ECE5]/60 text-base leading-relaxed mb-6">
                   {ride.flavour}
                 </p>
-                <span className="text-[#855832] font-black uppercase tracking-widest text-xs border-b-2 border-[#855832] pb-0.5 group-hover:text-[#F3ECE5] group-hover:border-[#F3ECE5] transition-colors">
+                <span className="text-[#c21717] font-black uppercase tracking-widest text-xs border-b-2 border-[#c21717] pb-0.5 group-hover:text-[#F3ECE5] group-hover:border-[#F3ECE5] transition-colors">
                   View on Strava &rarr;
                 </span>
               </div>

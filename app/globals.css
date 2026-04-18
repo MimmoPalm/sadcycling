@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-crimson: #8B0000;
-  --color-crimson-dark: #6B0000;
+  --color-crimson: #c21717;
+  --color-crimson-dark: #a01010;
   --color-off-white: #F5F5F5;
   --font-barlow: "Barlow Condensed", sans-serif;
 }

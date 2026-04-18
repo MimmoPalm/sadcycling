@@ -25,7 +25,7 @@ export default function TheCharity() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="charity" className="bg-[#11151C] py-24 px-4">
+    <section id="charity" className="bg-[#c21717] py-24 px-4">
       <div className="max-w-5xl mx-auto">
         <motion.div
           ref={ref}
@@ -36,13 +36,13 @@ export default function TheCharity() {
         >
           <motion.p
             variants={itemVariants}
-            className="text-[#F3ECE5]/60 font-black uppercase tracking-widest text-sm mb-4"
+            className="text-white/60 font-black uppercase tracking-widest text-sm mb-4"
           >
             Why We Ride
           </motion.p>
           <motion.h2
             variants={itemVariants}
-            className="section-heading text-[#F3ECE5] mb-8"
+            className="section-heading text-white mb-8"
           >
             Great Ormond Street<br />Hospital
           </motion.h2>
@@ -64,7 +64,7 @@ export default function TheCharity() {
 
           <motion.div
             variants={itemVariants}
-            className="space-y-4 text-[#F3ECE5]/80 text-lg leading-relaxed max-w-2xl mx-auto mb-10"
+            className="space-y-4 text-white/80 text-lg leading-relaxed max-w-2xl mx-auto mb-10"
           >
             <p>
               We&apos;ve been supporting Great Ormond Street Hospital for a couple of years now. This year we&apos;re doing it again.
@@ -77,21 +77,29 @@ export default function TheCharity() {
             </p>
           </motion.div>
 
-          {/* Donation total */}
+          {/* Goal display */}
           <motion.div
             variants={itemVariants}
             className="mb-8"
           >
-            <div className="inline-block border-2 border-[#855832] px-10 py-6 mb-6">
-              <div className="text-[#F3ECE5]/50 font-black uppercase tracking-widest text-xs mb-2">
-                Total raised
+            <div className="inline-block border-2 border-white/40 px-10 py-6 mb-6">
+              <div className="text-white/60 font-black uppercase tracking-widest text-xs mb-2">
+                Our Goal
               </div>
-              <div className="text-[#F3ECE5] font-black text-4xl mb-1">
-                £0 raised so far
+              <div className="text-white font-black text-5xl mb-2">
+                £1,000
               </div>
-              <div className="text-[#F3ECE5]/50 text-sm">
-                Be the first to donate
+              <div className="text-white/70 text-sm mb-4">
+                Every pound goes directly to Great Ormond Street Hospital
               </div>
+              <a
+                href={JUSTGIVING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/80 text-sm font-bold hover:text-white transition-colors underline underline-offset-4"
+              >
+                See how much we&apos;ve raised so far &rarr;
+              </a>
             </div>
           </motion.div>
 
@@ -100,18 +108,11 @@ export default function TheCharity() {
               href={JUSTGIVING_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#855832] text-[#F3ECE5] font-black uppercase tracking-widest px-10 py-5 text-lg border-2 border-[#855832] hover:bg-[#F3ECE5] hover:text-[#855832] transition-all duration-200"
+              className="inline-block bg-white text-[#c21717] font-black uppercase tracking-widest px-10 py-5 text-lg border-2 border-white hover:bg-[#c21717] hover:text-white transition-all duration-200"
             >
               Donate Now
             </a>
           </motion.div>
-
-          <motion.p
-            variants={itemVariants}
-            className="text-[#F3ECE5]/30 text-xs font-bold uppercase tracking-widest"
-          >
-            Total updates on JustGiving
-          </motion.p>
         </motion.div>
       </div>
     </section>

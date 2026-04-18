@@ -43,9 +43,10 @@ export default function Nav() {
         <a href="#" className="flex items-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/logo-no-bg.png"
-            alt="SAD Cycling — Pedal fast chase joy"
-            className="h-10 w-auto"
+            src="/logo-text-only.png"
+            alt="SAD Cycling"
+            className="h-12 w-auto"
+            style={{ filter: 'brightness(0) invert(1)' }}
           />
         </a>
         <div className="hidden md:flex items-center gap-6">

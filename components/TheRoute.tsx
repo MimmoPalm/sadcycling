@@ -100,7 +100,7 @@ export default function TheRoute() {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ type: 'spring', stiffness: 100, damping: 20 }}
-          className="text-[#855832] font-black uppercase tracking-widest text-sm mb-4"
+          className="text-[#c21717] font-black uppercase tracking-widest text-sm mb-4"
         >
           The Journey · May 2026
         </motion.p>
@@ -171,7 +171,7 @@ export default function TheRoute() {
             >
               <polygon
                 points="330,98 322,104 326,101 318,101 326,101 322,98"
-                fill="#855832"
+                fill="#c21717"
               />
             </motion.g>
 
@@ -181,7 +181,7 @@ export default function TheRoute() {
                 key={i}
                 d={segD}
                 fill="none"
-                stroke={activeDay === i + 1 ? '#855832' : 'transparent'}
+                stroke={activeDay === i + 1 ? '#c21717' : 'transparent'}
                 strokeWidth="5"
                 strokeLinecap="round"
                 style={{ cursor: 'pointer', transition: 'stroke 0.2s' }}
@@ -204,7 +204,7 @@ export default function TheRoute() {
                   cx={city.x}
                   cy={city.y}
                   r={activeCity === city.name ? 8 : 5}
-                  fill={activeCity === city.name ? '#855832' : '#F3ECE5'}
+                  fill={activeCity === city.name ? '#c21717' : '#F3ECE5'}
                   stroke="#11151C"
                   strokeWidth="1.5"
                   style={{ transition: 'r 0.2s, fill 0.2s' }}
@@ -216,7 +216,7 @@ export default function TheRoute() {
                   fontSize="10"
                   fontWeight="700"
                   fontFamily="sans-serif"
-                  fill={activeCity === city.name ? '#855832' : '#F3ECE580'}
+                  fill={activeCity === city.name ? '#c21717' : '#F3ECE580'}
                   style={{ transition: 'fill 0.2s', letterSpacing: '0.05em', textTransform: 'uppercase' }}
                 >
                   {city.name}
@@ -233,9 +233,9 @@ export default function TheRoute() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 8 }}
               transition={{ type: 'spring', stiffness: 200, damping: 24 }}
-              className="absolute bottom-4 right-4 bg-[#F3ECE5] text-[#11151C] p-4 max-w-xs shadow-xl border-2 border-[#855832] z-10"
+              className="absolute bottom-4 right-4 bg-[#F3ECE5] text-[#11151C] p-4 max-w-xs shadow-xl border-2 border-[#c21717] z-10"
             >
-              <div className="text-[#855832] font-black uppercase tracking-widest text-xs mb-1">
+              <div className="text-[#c21717] font-black uppercase tracking-widest text-xs mb-1">
                 Day {activeDayData.day} — {activeDayData.date}
               </div>
               <div className="font-black text-lg uppercase mb-1">
@@ -273,12 +273,12 @@ export default function TheRoute() {
               variants={cardVariants}
               initial="hidden"
               animate={cardsInView ? 'visible' : 'hidden'}
-              className="bg-[#11151C] border border-[#855832]/40 p-6 hover:border-[#855832] transition-colors cursor-default"
+              className="bg-[#11151C] border border-[#c21717]/40 p-6 hover:border-[#c21717] transition-colors cursor-default"
               onMouseEnter={() => setActiveDay(day.day)}
               onMouseLeave={() => setActiveDay(null)}
             >
               <div className="flex items-center gap-3 mb-4">
-                <span className="bg-[#855832] text-[#F3ECE5] font-black text-2xl w-12 h-12 flex items-center justify-center flex-shrink-0">
+                <span className="bg-[#c21717] text-[#F3ECE5] font-black text-2xl w-12 h-12 flex items-center justify-center flex-shrink-0">
                   {day.day}
                 </span>
                 <span className="text-[#F3ECE5]/60 font-bold uppercase tracking-widest text-xs leading-tight">

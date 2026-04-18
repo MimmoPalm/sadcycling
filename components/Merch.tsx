@@ -15,7 +15,7 @@ export default function Merch() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 mb-8">
           <div>
-            <p className="text-[#855832] font-black uppercase tracking-widest text-xs mb-1">
+            <p className="text-[#c21717] font-black uppercase tracking-widest text-xs mb-1">
               Look the Part
             </p>
             <h2 className="text-[#11151C] font-black uppercase text-3xl tracking-widest">
@@ -31,7 +31,7 @@ export default function Merch() {
           transition={{ type: 'spring', stiffness: 100, damping: 20 }}
           className="max-w-sm"
         >
-          <div className="group border-2 border-[#11151C]/20 hover:border-[#855832] transition-colors flex gap-0 sm:gap-0">
+          <div className="group border-2 border-[#11151C]/20 hover:border-[#c21717] transition-colors flex gap-0 sm:gap-0">
             <div className="bg-[#11151C]/5 flex items-center justify-center p-8 min-w-[100px]">
               <div className="text-center text-[#11151C]/30">
                 <p className="text-xs font-bold uppercase tracking-widest">Image TBC</p>
@@ -41,12 +41,12 @@ export default function Merch() {
               <div className="text-base font-black uppercase text-[#11151C] mb-1">{product.name}</div>
               <div className="text-[#11151C]/60 text-sm mb-3">{product.description}</div>
               <div className="flex items-center gap-4">
-                <span className="text-xl font-black text-[#855832]">{product.price}</span>
+                <span className="text-xl font-black text-[#c21717]">{product.price}</span>
                 <a
                   href={product.shopUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#11151C] text-[#F3ECE5] font-black uppercase tracking-widest px-4 py-2 text-xs hover:bg-[#855832] transition-colors"
+                  className="bg-[#c21717] text-white font-black uppercase tracking-widest px-4 py-2 text-xs hover:bg-[#11151C] transition-colors"
                 >
                   Buy Now
                 </a>

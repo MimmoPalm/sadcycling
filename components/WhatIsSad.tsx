@@ -36,7 +36,7 @@ export default function WhatIsSad() {
         >
           <motion.p
             variants={itemVariants}
-            className="text-[#855832] font-black uppercase tracking-widest text-sm mb-4"
+            className="text-[#c21717] font-black uppercase tracking-widest text-sm mb-4"
           >
             The Concept
           </motion.p>
@@ -65,7 +65,7 @@ export default function WhatIsSad() {
               This year we are riding Marseille to Genoa — several hundred kilometres down the French and
               Italian Riviera — to support Great Ormond Street Hospital.
             </motion.p>
-            <motion.p variants={itemVariants} className="font-bold text-[#855832]">
+            <motion.p variants={itemVariants} className="font-bold text-[#c21717]">
               Because suffering is more bearable when it means something.
             </motion.p>
           </div>

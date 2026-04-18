@@ -9,14 +9,14 @@ export default function LiveTracking() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="track" className="bg-[#855832] py-12 px-4">
+    <section id="track" className="bg-white py-12 px-4">
       <div ref={ref} className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-8">
         <div className="text-center sm:text-left">
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
             transition={{ type: 'spring', stiffness: 100, damping: 20 }}
-            className="text-[#F3ECE5]/70 font-black uppercase tracking-widest text-xs mb-2"
+            className="text-[#11151C]/50 font-black uppercase tracking-widest text-xs mb-2"
           >
             GPS Live · May 2026
           </motion.p>
@@ -24,7 +24,7 @@ export default function LiveTracking() {
             initial={{ opacity: 0, y: 16 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
             transition={{ type: 'spring', stiffness: 100, damping: 20, delay: 0.08 }}
-            className="text-[#F3ECE5] font-black uppercase text-2xl sm:text-3xl tracking-widest mb-2"
+            className="text-[#11151C] font-black uppercase text-2xl sm:text-3xl tracking-widest mb-2"
           >
             Track us live
           </motion.h2>
@@ -32,7 +32,7 @@ export default function LiveTracking() {
             initial={{ opacity: 0, y: 16 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
             transition={{ type: 'spring', stiffness: 100, damping: 20, delay: 0.16 }}
-            className="text-[#F3ECE5]/70 text-base font-semibold max-w-sm"
+            className="text-[#11151C]/60 text-base font-semibold max-w-sm"
           >
             Watch our progress in real time. Judge our pace accordingly.
           </motion.p>
@@ -54,7 +54,7 @@ export default function LiveTracking() {
               repeat: Infinity,
               ease: 'easeInOut',
             }}
-            className="absolute inset-0 bg-[#F3ECE5] pointer-events-none"
+            className="absolute inset-0 bg-[#c21717] pointer-events-none"
             aria-hidden="true"
           />
           <motion.a
@@ -64,7 +64,7 @@ export default function LiveTracking() {
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.97 }}
             transition={{ type: 'spring', stiffness: 100, damping: 20 }}
-            className="relative inline-block bg-[#11151C] text-[#F3ECE5] font-black uppercase tracking-widest px-10 py-4 text-base border-2 border-[#11151C] hover:bg-[#F3ECE5] hover:text-[#11151C] transition-colors duration-200 z-10"
+            className="relative inline-block bg-[#c21717] text-white font-black uppercase tracking-widest px-10 py-4 text-base border-2 border-[#c21717] hover:bg-white hover:text-[#c21717] transition-colors duration-200 z-10"
           >
             Open Live Tracker
           </motion.a>

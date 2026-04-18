@@ -8,35 +8,35 @@ const riders = [
     name: 'Stefano',
     displayName: 'Stefano',
     nickname: 'The Hedonist',
-    bio: 'In it for the food, the views, and the post-ride Aperol Spritz. Has been known to scout restaurants before checking the elevation profile.',
+    bio: 'In it for the views, the food, and whatever\'s cold and alcoholic at the finish line. Has been known to research restaurants before checking the route.',
     image: '/stefano.jpeg',
   },
   {
     name: 'Aurelio',
     displayName: 'Aurelio',
     nickname: 'The Reluctant Martyr',
-    bio: 'Will suffer more than anyone. Won\'t complain — he\'s just quietly managing seventeen other life crises from his phone. He\'d honestly rather be on his couch in East London sorting them out.',
+    bio: 'Will suffer more than anyone and say nothing — because he\'s silently managing a separate life crisis on his phone. Would genuinely rather be on his sofa in East London.',
     image: '/aurelio.jpeg',
   },
   {
     name: 'Domenico',
     displayName: 'Domenico (aka Mimmo)',
     nickname: 'The Captain',
-    bio: 'Planned the route, booked the hotels, and takes full responsibility for everything that goes right. When it goes wrong, he blames the weather, the GPS, and increasingly, artificial intelligence.',
+    bio: 'Planned the route, booked the hotels, and takes credit for everything that goes right. Blames the GPS, the wind, or AI when it doesn\'t.',
     image: '/mimmo.jpeg',
   },
   {
-    name: 'Julian',
-    displayName: 'Julian',
+    name: 'Julien',
+    displayName: 'Julien',
     nickname: 'The Spoiled King',
-    bio: 'Insists on a proper bed, a hot shower, and a functioning coffee machine. Has not yet explained why he keeps coming back.',
+    bio: 'Requires a real bed, hot water, and an espresso before 8am. Has not yet explained why he keeps signing up.',
     image: '/julien.jpeg',
   },
   {
     name: 'Frezz',
     displayName: 'Frezz',
     nickname: 'The Wajone',
-    bio: 'The youngest. From Naples. The nickname is untranslatable but everyone from Naples understands it. Our mascot. Don\'t tell him that.',
+    bio: 'The youngest. From Naples. The nickname is untranslatable. Our unofficial mascot — just don\'t tell him that.',
     image: '/frezz.png',
   },
 ]
@@ -62,12 +62,12 @@ export default function MeetTheRiders() {
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
   return (
-    <section id="riders" className="bg-[#11151C] py-24 px-4">
+    <section id="riders" className="bg-[#c21717] py-24 px-4">
       <div className="max-w-7xl mx-auto">
-        <p className="text-[#855832] font-black uppercase tracking-widest text-sm mb-4">
+        <p className="text-white/60 font-black uppercase tracking-widest text-sm mb-4">
           The Team
         </p>
-        <h2 className="section-heading text-[#F3ECE5] mb-16">
+        <h2 className="section-heading text-white mb-16">
           The 2026 Team
         </h2>
 
@@ -87,7 +87,7 @@ export default function MeetTheRiders() {
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: 'spring', stiffness: 100, damping: 20 }}
-                className="w-28 h-28 md:w-36 md:h-36 rounded-full bg-[#855832]/20 border-2 border-[#F3ECE5]/20 mx-auto mb-4 overflow-hidden group-hover:border-[#855832] transition-colors flex-shrink-0"
+                className="w-28 h-28 md:w-36 md:h-36 rounded-full bg-white/20 border-2 border-white/20 mx-auto mb-4 overflow-hidden group-hover:border-white transition-colors flex-shrink-0"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -96,13 +96,13 @@ export default function MeetTheRiders() {
                   className="w-full h-full object-cover"
                 />
               </motion.div>
-              <div className="text-[#F3ECE5] font-black uppercase text-base leading-tight mb-0.5">
+              <div className="text-white font-black uppercase text-base leading-tight mb-0.5">
                 {rider.displayName}
               </div>
-              <div className="text-[#855832] font-bold uppercase text-xs tracking-widest mb-3">
+              <div className="text-white/70 font-bold uppercase text-xs tracking-widest mb-3">
                 &quot;{rider.nickname}&quot;
               </div>
-              <div className="text-[#F3ECE5]/50 text-sm leading-relaxed">
+              <div className="text-white/70 text-sm leading-relaxed">
                 {rider.bio}
               </div>
             </motion.div>
@@ -113,7 +113,7 @@ export default function MeetTheRiders() {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ delay: 0.8 }}
-          className="mt-16 text-[#F3ECE5]/30 text-xs italic text-center max-w-md mx-auto"
+          className="mt-16 text-white/40 text-xs italic text-center max-w-md mx-auto"
         >
           Wajone (n.) — Neapolitan. Untranslatable. Somewhere between &apos;kid&apos;, &apos;lad&apos;, and a term of affection you&apos;d only use with someone you&apos;d trust on a long ride.
         </motion.p>
