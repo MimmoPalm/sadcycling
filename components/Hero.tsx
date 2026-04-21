@@ -11,7 +11,7 @@ export default function Hero() {
         <img
           src="/logo-item.png"
           alt="SAD Cycling"
-          className="w-48 md:w-64 mx-auto mb-10"
+          className="w-24 md:w-32 mx-auto mb-10"
           style={{ filter: 'brightness(0) invert(1)' }}
         />
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -82,7 +82,6 @@ export default function WhatIsSad() {
             src="/logo-no-bg.png"
             alt="SAD Cycling — Pedal fast chase joy"
             className="w-full max-w-sm"
-            style={{ filter: 'brightness(0) invert(1)' }}
           />
         </motion.div>
       </div>

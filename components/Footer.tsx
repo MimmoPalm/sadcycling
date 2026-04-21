@@ -11,7 +11,7 @@ export default function Footer() {
             <img
               src="/logo-no-bg.png"
               alt="SAD Cycling — Pedal fast chase joy"
-              className="h-14 w-auto mb-4"
+              className="h-16 w-auto mb-4"
               style={{ filter: 'brightness(0) invert(1)' }}
             />
           </div>
