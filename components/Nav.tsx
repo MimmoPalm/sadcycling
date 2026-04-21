@@ -9,19 +9,11 @@ const navLinks = [
   { label: 'Track', href: '#track' },
   { label: 'Route', href: '#route' },
   { label: 'Riders', href: '#riders' },
-  { label: 'Merch', href: '#merch' },
   { label: 'Donate', href: JUSTGIVING_URL, external: true },
 ]
 
 export default function Nav() {
   const [active, setActive] = useState('')
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50)
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
 
   useEffect(() => {
     const sections = document.querySelectorAll('section[id]')
@@ -38,7 +30,7 @@ export default function Nav() {
   }, [])
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[#11151C] shadow-lg' : 'bg-transparent'}`}>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#c21717] shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         <a href="#" className="flex items-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}

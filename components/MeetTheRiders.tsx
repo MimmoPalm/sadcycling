@@ -15,7 +15,7 @@ const riders = [
     name: 'Aurelio',
     displayName: 'Aurelio',
     nickname: 'The Reluctant Martyr',
-    bio: 'Will suffer more than anyone and say nothing — because he\'s silently managing a separate life crisis on his phone. Would genuinely rather be on his sofa in East London.',
+    bio: 'Has had more encounters with tarmac than any one person should. Shows up every year anyway — slightly patched up — and keeps us entertained with his existential questions.',
     image: '/aurelio.jpeg',
   },
   {
@@ -29,14 +29,14 @@ const riders = [
     name: 'Julien',
     displayName: 'Julien',
     nickname: 'The Spoiled King',
-    bio: 'Requires a real bed, hot water, and an espresso before 8am. Has not yet explained why he keeps signing up.',
+    bio: 'Requires a comfortable bed, double mains, and loads of espresso before 8am. He\'s also a teddy bear and will give you the warmest hug at the finish line.',
     image: '/julien.jpeg',
   },
   {
     name: 'Frezz',
     displayName: 'Frezz',
-    nickname: 'The Wajone',
-    bio: 'The youngest. From Naples. The nickname is untranslatable. Our unofficial mascot — just don\'t tell him that.',
+    nickname: 'The Ride Jockey',
+    bio: 'The youngest of the crew. From Naples. When he\'s not on a bike he\'s behind the decks — and he brings the same energy to both. Our unofficial mascot.',
     image: '/frezz.png',
   },
 ]
@@ -109,14 +109,6 @@ export default function MeetTheRiders() {
           ))}
         </motion.div>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : {}}
-          transition={{ delay: 0.8 }}
-          className="mt-16 text-white/40 text-xs italic text-center max-w-md mx-auto"
-        >
-          Wajone (n.) — Neapolitan. Untranslatable. Somewhere between &apos;kid&apos;, &apos;lad&apos;, and a term of affection you&apos;d only use with someone you&apos;d trust on a long ride.
-        </motion.p>
       </div>
     </section>
   )

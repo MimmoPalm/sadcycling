@@ -72,7 +72,7 @@ export const riders = [
   {
     name: 'Aurelio',
     nickname: 'The Reluctant Martyr',
-    bio: "Will suffer more than anyone. Won't complain — he's just quietly managing seventeen other life crises from his phone. He'd honestly rather be on his couch in East London sorting them out.",
+    bio: "Has had more encounters with tarmac than any one person should. Shows up every year anyway — slightly patched up — and keeps us entertained with his existential questions.",
     image: '/aurelio.jpeg',
   },
   {
@@ -85,13 +85,13 @@ export const riders = [
   {
     name: 'Julien',
     nickname: 'The Spoiled King',
-    bio: 'Insists on a proper bed, a hot shower, and a functioning coffee machine. Has not yet explained why he keeps coming back.',
+    bio: "Requires a comfortable bed, double mains, and loads of espresso before 8am. He's also a teddy bear and will give you the warmest hug at the finish line.",
     image: '/julien.jpeg',
   },
   {
     name: 'Frezz',
-    nickname: 'The Wajone',
-    bio: "The youngest. From Naples. The nickname is untranslatable but everyone from Naples understands it. Our mascot. Don't tell him that.",
+    nickname: 'The Ride Jockey',
+    bio: "The youngest of the crew. From Naples. When he's not on a bike he's behind the decks — and he brings the same energy to both. Our unofficial mascot.",
     image: '/frezz.png',
   },
 ]
@@ -108,17 +108,19 @@ export const merch = [
 
 export const pastRides = [
   {
-    city: 'Paris',
+    city: 'London to Paris',
+    year: 2024,
     image: '/paris.jpeg',
     flavour:
-      'Tired legs. Questionable decisions. A finish line that kept moving. We made it anyway, and the croissants were worth every climb.',
-    link: STRAVA_URL,
+      'Four hundred kilometres through the English and French countryside, following the Avenue Verte. The roads were quiet. The legs were not. Paris, as always, was worth every kilometre.',
+    link: 'https://strava.app.link/Fp4l1sjSr2b',
   },
   {
-    city: 'Amsterdam',
+    city: 'London to Amsterdam',
+    year: 2025,
     image: '/amsterdam.jpeg',
     flavour:
-      'Flat roads, strong headwinds, and the collective delusion that cycling to Amsterdam was somehow a good idea. It was.',
-    link: STRAVA_URL,
+      'Nearly 500 kilometres through four countries — the UK, France, Belgium, and the Netherlands. It rained every single day. Nobody stopped. Amsterdam welcomed us the only way it knows how.',
+    link: 'https://strava.app.link/Fp4l1sjSr2b',
   },
 ]

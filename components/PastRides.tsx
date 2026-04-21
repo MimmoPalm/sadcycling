@@ -2,24 +2,22 @@
 
 import { useRef } from 'react'
 import { motion, useInView, type Variants } from 'framer-motion'
-import { STRAVA_URL } from '@/lib/content'
-
 const pastRides = [
   {
-    city: 'Paris',
+    city: 'London to Paris',
     year: '2024',
     image: '/paris.jpeg',
     flavour:
-      'Tired legs. Questionable decisions. A finish line that kept moving. We made it anyway, and the croissants were worth every climb.',
-    link: STRAVA_URL,
+      'Four hundred kilometres through the English and French countryside, following the Avenue Verte. The roads were quiet. The legs were not. Paris, as always, was worth every kilometre.',
+    link: 'https://strava.app.link/Fp4l1sjSr2b',
   },
   {
-    city: 'Amsterdam',
+    city: 'London to Amsterdam',
     year: '2025',
     image: '/amsterdam.jpeg',
     flavour:
-      'Flat roads, strong headwinds, and the collective delusion that cycling to Amsterdam was somehow a good idea. It was.',
-    link: STRAVA_URL,
+      'Nearly 500 kilometres through four countries — the UK, France, Belgium, and the Netherlands. It rained every single day. Nobody stopped. Amsterdam welcomed us the only way it knows how.',
+    link: 'https://strava.app.link/Fp4l1sjSr2b',
   },
 ]
 
