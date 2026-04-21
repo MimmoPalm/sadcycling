@@ -8,7 +8,7 @@ const riders = [
     name: 'Stefano',
     displayName: 'Stefano',
     nickname: 'The Hedonist',
-    bio: 'In it for the views, the food, and whatever's cold and alcoholic at the finish line and on the routes. Known to strike fear into every hotel breakfast buffet he's ever encountered.',
+    bio: "In it for the views, the food, and whatever's cold and alcoholic at the finish line and on the routes. Known to strike fear into every hotel breakfast buffet he's ever encountered.",
     image: '/stefano.jpeg',
   },
   {
