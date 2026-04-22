@@ -66,20 +66,21 @@ export default function TheCharity() {
             variants={itemVariants}
             className="space-y-4 text-white/80 text-lg leading-relaxed max-w-2xl mx-auto mb-10"
           >
-         <p>
-  We&apos;ve been supporting Great Ormond Street Hospital for a couple of years now. 
-  This year we&apos;re doing it again.
-</p>
-<p>
-  GOSH is a place that brings hope to children facing cancer and their families — 
-  through expert care, world-class research, and incredible support. As a group, 
-  we aim to raise £1,000. Every kilometre we pedal from Marseille to Genoa, 
-  every hill we suffer through, is dedicated to making life better for those children.
-</p>
-<p>
-  Your donation, however small, makes a real difference. And it makes our legs 
-  hurt slightly less, psychologically.
-</p>
+            <p>
+              We&apos;ve been supporting Great Ormond Street Hospital for a couple of years now.
+              This year we&apos;re doing it again.
+            </p>
+            <p>
+              GOSH is a place that brings hope to children facing cancer and their families —
+              through expert care, world-class research, and incredible support. As a group,
+              we aim to raise £1,000. Every kilometre we pedal from Marseille to Genoa,
+              every hill we suffer through, is dedicated to making life better for those children.
+            </p>
+            <p>
+              Your donation, however small, makes a real difference. And it makes our legs
+              hurt slightly less, psychologically.
+            </p>
+          </motion.div>
 
           {/* Goal display */}
           <motion.div
@@ -96,7 +97,7 @@ export default function TheCharity() {
               <div className="text-white/70 text-sm mb-4">
                 Every pound goes directly to Great Ormond Street Hospital
               </div>
-              <a
+              
                 href={JUSTGIVING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -108,7 +109,7 @@ export default function TheCharity() {
           </motion.div>
 
           <motion.div variants={itemVariants} className="mb-4">
-            <a
+            
               href={JUSTGIVING_URL}
               target="_blank"
               rel="noopener noreferrer"
@@ -117,6 +118,7 @@ export default function TheCharity() {
               Donate Now
             </a>
           </motion.div>
+
         </motion.div>
       </div>
     </section>
