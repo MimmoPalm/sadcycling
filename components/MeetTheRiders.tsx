@@ -36,7 +36,7 @@ const riders = [
     name: 'Frezz',
     displayName: 'Frezz',
     nickname: 'The Ride Jockey',
-    bio: 'The youngest of the crew. From Naples. When he\'s not on a bike he\'s behind the decks — and he brings the same energy to both. Our unofficial mascot.',
+    bio: 'The youngest of the crew. When he\'s not on a bike he\'s behind the decks — and he brings the same energy to both. Our unofficial mascot.',
     image: '/frezz.png',
   },
 ]
