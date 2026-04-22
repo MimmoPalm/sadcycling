@@ -28,7 +28,7 @@ const riders = [
   {
     name: 'Julien',
     displayName: 'Julien',
-    nickname: 'The Spoiled King',
+    nickname: 'The Two Mains King',
     bio: 'Requires a comfortable bed, double mains, and loads of espresso before 8am. He\'s also a teddy bear and will give you the warmest hug at the finish line.',
     image: '/julien.jpeg',
   },
