@@ -66,16 +66,20 @@ export default function TheCharity() {
             variants={itemVariants}
             className="space-y-4 text-white/80 text-lg leading-relaxed max-w-2xl mx-auto mb-10"
           >
-            <p>
-              We&apos;ve been supporting Great Ormond Street Hospital for a couple of years now. This year we&apos;re doing it again.
-            </p>
-            <p>
-              GOSH does genuinely important work — world-class care for children with the most complex conditions. Every kilometre we suffer is a kilometre ridden in their name.
-            </p>
-            <p>
-              Your donation, however small, makes a real difference. And it makes our legs hurt slightly less, psychologically.
-            </p>
-          </motion.div>
+         <p>
+  We&apos;ve been supporting Great Ormond Street Hospital for a couple of years now. 
+  This year we&apos;re doing it again.
+</p>
+<p>
+  GOSH is a place that brings hope to children facing cancer and their families — 
+  through expert care, world-class research, and incredible support. As a group, 
+  we aim to raise £1,000. Every kilometre we pedal from Marseille to Genoa, 
+  every hill we suffer through, is dedicated to making life better for those children.
+</p>
+<p>
+  Your donation, however small, makes a real difference. And it makes our legs 
+  hurt slightly less, psychologically.
+</p>
 
           {/* Goal display */}
           <motion.div
