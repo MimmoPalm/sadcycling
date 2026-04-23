@@ -97,7 +97,7 @@ export default function TheCharity() {
               <div className="text-white/70 text-sm mb-4">
                 Every pound goes directly to Great Ormond Street Hospital
               </div>
-              
+              <a
                 href={JUSTGIVING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -109,7 +109,7 @@ export default function TheCharity() {
           </motion.div>
 
           <motion.div variants={itemVariants} className="mb-4">
-            
+            <a
               href={JUSTGIVING_URL}
               target="_blank"
               rel="noopener noreferrer"
