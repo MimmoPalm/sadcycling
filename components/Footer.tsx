@@ -59,7 +59,10 @@ export default function Footer() {
 
         <div className="border-t border-white/20 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-white/60 text-xs uppercase tracking-widest font-bold">
-            &copy; 2024 SAD Cycling. All rights reserved.
+            &copy; 2026 SAD Cycling. All rights reserved.
+          </p>
+          <p className="text-white/60 text-xs font-bold">
+            Built with ❤️ and sore legs
           </p>
         </div>
       </div>

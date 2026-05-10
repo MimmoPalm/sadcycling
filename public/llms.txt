@@ -1,0 +1,49 @@
+# SAD Cycling
+
+> A charity cycling expedition raising money for Great Ormond Street Hospital.
+
+SAD Cycling is an annual long-distance charity cycling event organised by five riders — Stefano, Aurelio, Domenico (Mimmo), Julien, and Frezz — who undertake a multi-day cycling expedition every May in aid of Great Ormond Street Hospital Children's Charity (registered charity number 235825).
+
+## 2026 Edition: Marseille to Genoa
+
+- Route: Marseille, France → Genoa, Italy (French and Italian Riviera)
+- Dates: Wednesday 20 May – Saturday 23 May 2026
+- Total distance: 437 km
+- Total elevation: 4,377 m
+
+### Daily stages
+
+- Day 1 (20 May): Marseille → Saint-Raphaël — 162 km, 1,479 m elevation
+- Day 2 (21 May): Saint-Raphaël → Nice — 72 km, 643 m elevation
+- Day 3 (22 May): Nice → Alassio — 106.2 km, 1,429 m elevation (crosses into Italy via Monaco, Menton, San Remo)
+- Day 4 (23 May): Alassio → Genoa — 97.1 km, 826 m elevation
+
+## Charity
+
+All funds raised go to Great Ormond Street Hospital Children's Charity (GOSH), which supports one of the world's leading children's hospitals in London.
+
+Donate: https://sadcycling.com/#charity
+
+## Past Editions
+
+- 2024: London to Paris
+- 2025: London to Amsterdam (nearly 500 km)
+
+## The Riders
+
+- Stefano ("The Hedonist")
+- Aurelio ("The Phoenix")
+- Domenico / Mimmo ("The Captain")
+- Julien ("The Two Mains King")
+- Frezz ("The Ride Jockey")
+
+## Live Tracking
+
+The ride can be followed live via Wahoo GPS during the event.
+
+## Website
+
+- Homepage: https://sadcycling.com
+- Route details: https://sadcycling.com/#route
+- Meet the riders: https://sadcycling.com/#riders
+- Donate: https://sadcycling.com/#charity
