@@ -46,28 +46,26 @@ export default function WhatIsSad() {
           >
             What is<br />SAD Cycling?
           </motion.h2>
-          <div className="space-y-5 text-[#11151C]/80 text-lg leading-relaxed">
-            <motion.p variants={itemVariants} className="font-bold text-[#11151C] text-xl">
-              We are the SAD. Which sounds worse than it is.
-            </motion.p>
-            <motion.p variants={itemVariants}>
-              Stefano, Aurelio, Domenico — three Italian Londoners who one day decided that the best way
-              to spend a May bank holiday was to get on bikes and suffer for charity. Every year since.
-            </motion.p>
-            <motion.p variants={itemVariants}>
-              This is not a race. Nobody is winning. The only real competition is who complains the most —
-              and that race, we are all equally qualified for. It is more about roadside cafe stops that
-              take far longer than planned, headwinds that were definitely not in the forecast, and coastal
-              roads that make every kilometre worth it.
-            </motion.p>
-            <motion.p variants={itemVariants}>
-              Every year, in May, we ride. And every year, we raise money for a charity that matters.
-              This year we are riding Marseille to Genoa — several hundred kilometres down the French and
-              Italian Riviera — to support Great Ormond Street Hospital.
-            </motion.p>
-            <motion.p variants={itemVariants} className="font-bold text-[#c21717]">
-              Because suffering is more bearable when it means something.
-            </motion.p>
+         <div className="space-y-5 text-[#11151C]/80 text-lg leading-relaxed">
+  <motion.p variants={itemVariants} className="font-bold text-[#11151C] text-xl">
+    We are the SAD. Which sounds worse than it is.
+  </motion.p>
+  <motion.p variants={itemVariants}>
+    Stefano, Aurelio, Domenico. Three Italian Londoners who decided that the best way
+    to spend the last bank holiday of May every year was to get on bikes and ride for charity. And we've been riding every year and we had more friends joining the journey.
+  </motion.p>
+  <motion.p variants={itemVariants}>
+    This is not a race. Nobody is winning. We're here for the journey and to do some good alongside it.
+    It's more about the café stops that take far longer than planned, the unexpected and fun things that happen along the way, headwinds that were definitely not in the forecast, and beautiful
+    sights that make every kilometre worth it. We're here for the adventure.
+  </motion.p>
+  <motion.p variants={itemVariants}>
+    But most importantly, every year, we raise money for the Great Ormond Street Hospital, a charity that makes every kilometre count.
+  </motion.p>
+  <motion.p variants={itemVariants} className="font-bold text-[#c21717]">
+    This year we are riding Marseille to Genoa, 400+ kilometres down the French and
+    Italian Riviera, in support of the Great Ormond Street Hospital.
+  </motion.p>
           </div>
         </motion.div>
 
