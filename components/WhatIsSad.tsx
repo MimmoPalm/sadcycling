@@ -50,10 +50,11 @@ export default function WhatIsSad() {
   <motion.p variants={itemVariants} className="font-bold text-[#11151C] text-xl">
     We are the SAD. Which sounds worse than it is.
   </motion.p>
-  <motion.p variants={itemVariants}>
-    Stefano, Aurelio, Domenico. Three Italian Londoners who decided that the best way
-    to spend the last bank holiday of May every year was to get on bikes and ride for charity. And we've been riding every year and we had more friends joining the journey.
-  </motion.p>
+           <motion.p variants={itemVariants}>
+  Stefano, Aurelio, Domenico. Three Italian Londoners who decided that the best way
+  to spend the last bank holiday of May every year was to get on bikes and ride for charity. 
+  And we've been riding every year since, with more friends joining the journey along the way.
+</motion.p> 
   <motion.p variants={itemVariants}>
     This is not a race. Nobody is winning. We're here for the journey and to do some good alongside it.
     It's more about the café stops that take far longer than planned, the unexpected and fun things that happen along the way, headwinds that were definitely not in the forecast, and beautiful
