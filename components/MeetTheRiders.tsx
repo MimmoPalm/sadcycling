@@ -15,7 +15,7 @@ const riders = [
     name: 'Aurelio',
     displayName: 'Aurelio',
     nickname: 'The Peer Reviewer',
-    bio: "This is the third description we've written for Aurelio. The previous two were sent back with feedback. A former LSE economist and researcher by trade, and an existentialist by nature, he approaches cycling and life as a continuous optimisation of efficiencies. An academic at heart, he runs surveys mid-climb and asks the kind of questions nobody else thought to raise at kilometre 80.",
+    bio: "This is the third description we've written for Aurelio. The previous two were sent back with feedback. Former LSE economist researcher and existentialist by nature, he runs surveys mid-climb and asks the kind of questions nobody else thought to raise at kilometre 80.",
     image: '/aurelio.jpeg',
   },
   {
