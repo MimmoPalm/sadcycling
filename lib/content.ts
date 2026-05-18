@@ -72,7 +72,7 @@ export const riders = [
   {
     name: 'Aurelio',
     nickname: 'The Peer Reviewer',
-    bio: "This is the third description we've written for Aurelio. The previous two were sent back with feedback. Former LSE economist researcher and existentialist by nature, he runs surveys mid-climb and asks the kind of questions nobody else thought to raise at kilometre 80.",
+    bio: "Former LSE economist researcher and existentialist by nature, he runs surveys mid-climb and asks the kind of questions nobody else thought to raise at kilometre 80.",
     image: '/aurelio.jpeg',
   },
   {
