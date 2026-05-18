@@ -14,7 +14,7 @@ const riders = [
   {
     name: 'Aurelio',
     displayName: 'Aurelio',
-    nickname: 'The Phoenix',
+    nickname: 'The Existentialist',
     bio: 'Has had more encounters with tarmac than any one person should. Shows up every year anyway — slightly patched up — and keep everyone entertained with his existential questions.',
     image: '/aurelio.jpeg',
   },

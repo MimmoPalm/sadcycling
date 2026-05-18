@@ -71,7 +71,7 @@ export const riders = [
   },
   {
     name: 'Aurelio',
-    nickname: 'The Reluctant Martyr',
+    nickname: 'The Existentialist',
     bio: "Has had more encounters with tarmac than any one person should. Shows up every year anyway — slightly patched up — and keeps us entertained with his existential questions.",
     image: '/aurelio.jpeg',
   },
