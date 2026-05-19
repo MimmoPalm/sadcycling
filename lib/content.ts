@@ -71,8 +71,8 @@ export const riders = [
   },
   {
     name: 'Aurelio',
-    nickname: 'The Peer Reviewer',
-    bio: "Former LSE economist researcher and existentialist by nature, he runs surveys mid-climb and asks the kind of questions nobody else thought to raise at kilometre 80.",
+    nickname: 'The Pollster',
+    bio: "Existentialist by nature, runs surveys mid-climb and asks the kind of questions nobody else thought to raise at kilometre 80. Will probably propose eating pizza even on a ride in South-East Asia, and will likely complain about its quality.",
     image: '/aurelio.jpeg',
   },
   {
