@@ -115,8 +115,6 @@ const tagColors: Record<string, string> = {
   Optional: 'bg-white/10 text-white/60',
 }
 
-const GMAPS_STATIC = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5986.2!2d8.929!3d44.408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d341b75e5873c7%3A0x45c6b0c2e2d2f5a!2sGenova%2C%20Metropolitan%20City%20of%20Genoa%2C%20Italy!5e0!3m2!1sen!2sit!4v1716500000000!5m2!1sen!2sit'
-
 export default function SadGenovaPage() {
   const sectionRef = useRef<HTMLElement>(null)
 
@@ -135,6 +133,72 @@ export default function SadGenovaPage() {
     const cards = document.querySelectorAll('.stop-card')
     cards.forEach((c) => observer.observe(c))
     return () => observer.disconnect()
+  }, [])
+
+  useEffect(() => {
+    // Dynamically load Leaflet
+    const link = document.createElement('link')
+    link.rel = 'stylesheet'
+    link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'
+    document.head.appendChild(link)
+
+    const script = document.createElement('script')
+    script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'
+    script.onload = () => {
+      const L = (window as any).L
+      if (!L || (document.getElementById('genova-map') as any)?._leaflet_id) return
+
+      const map = L.map('genova-map', { zoomControl: true }).setView([44.409, 8.931], 15)
+
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        attribution: '© OpenStreetMap contributors © CARTO',
+        maxZoom: 19,
+      }).addTo(map)
+
+      const stopCoords = [
+        { n: 1,  name: 'Basilica della Santissima Annunziata del Vastato', lat: 44.41416,  lng: 8.928363 },
+        { n: 2,  name: 'Via del Campo',                                     lat: 44.412476, lng: 8.928153 },
+        { n: 3,  name: 'Spianata di Castelletto',                           lat: 44.413348, lng: 8.933036 },
+        { n: 4,  name: 'Via Garibaldi — Musei di Strada Nuova',             lat: 44.411133, lng: 8.932106 },
+        { n: 5,  name: 'Palazzo Spinola National Gallery',                  lat: 44.410868, lng: 8.930216 },
+        { n: 6,  name: 'Cattedrale di San Lorenzo',                         lat: 44.407837, lng: 8.931084 },
+        { n: 7,  name: 'Palazzo San Giorgio',                               lat: 44.409099, lng: 8.928607 },
+        { n: 8,  name: 'Porto Antico',                                      lat: 44.40975,  lng: 8.928329 },
+        { n: 9,  name: 'Acquario di Genova',                                lat: 44.41025,  lng: 8.926672 },
+        { n: 10, name: 'Piazza Matteotti & Palazzo Ducale',                 lat: 44.407515, lng: 8.933251 },
+        { n: 11, name: 'Piazza De Ferrari',                                 lat: 44.407181, lng: 8.934036 },
+        { n: 12, name: 'Teatro Carlo Felice & Galleria Mazzini',            lat: 44.408029, lng: 8.934748 },
+        { n: 13, name: "Chiesa del Gesù (Sant'Ambrogio e Andrea)",          lat: 44.406664, lng: 8.933015 },
+        { n: 14, name: 'Porta Soprana',                                     lat: 44.405563, lng: 8.934505 },
+      ]
+
+      // Draw route polyline
+      const latlngs = stopCoords.map(s => [s.lat, s.lng] as [number, number])
+      L.polyline(latlngs, { color: '#c21717', weight: 3, opacity: 0.8, dashArray: '6, 6' }).addTo(map)
+
+      // Add numbered markers
+      stopCoords.forEach((stop) => {
+        const icon = L.divIcon({
+          className: '',
+          html: `<div style="background:#c21717;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:13px;width:28px;height:28px;display:flex;align-items:center;justify-content:center;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,0.5)">${stop.n}</div>`,
+          iconSize: [28, 28],
+          iconAnchor: [14, 14],
+        })
+        L.marker([stop.lat, stop.lng], { icon })
+          .addTo(map)
+          .bindPopup(`<strong style="font-family:sans-serif;font-size:13px">${stop.n}. ${stop.name}</strong>`)
+      })
+    }
+    document.head.appendChild(script)
+
+    return () => {
+      // cleanup on unmount
+      const mapEl = document.getElementById('genova-map') as any
+      if (mapEl && mapEl._leaflet_id) {
+        const L = (window as any).L
+        if (L) L.map('genova-map').remove()
+      }
+    }
   }, [])
 
   return (
@@ -226,21 +290,10 @@ export default function SadGenovaPage() {
 
         {/* MAP */}
         <section className="bg-[#111]">
-          <div className="w-full h-[50vh] md:h-[60vh]">
-            <iframe
-              title="SAD Genova Walking Tour Map"
-              width="100%"
-              height="100%"
-              style={{ border: 0, display: 'block' }}
-              loading="lazy"
-              allowFullScreen
-              referrerPolicy="no-referrer-when-downgrade"
-              src={GMAPS_STATIC}
-            />
-          </div>
+          <div className="w-full h-[60vh] md:h-[70vh]" id="genova-map" />
           <div className="py-4 px-4 text-center">
             <a
-              href="https://www.google.com/maps/dir/Basilica+della+Santissima+Annunziata+del+Vastato,+Genova/Via+del+Campo,+Genova/Spianata+di+Castelletto,+Genova/Musei+di+Strada+Nuova,+Via+Garibaldi,+Genova/Palazzo+Spinola,+Genova/Cattedrale+di+San+Lorenzo,+Genova/Palazzo+San+Giorgio,+Genova/Porto+Antico,+Genova/Acquario+di+Genova/Piazza+Matteotti,+Genova/Piazza+De+Ferrari,+Genova/Teatro+Carlo+Felice,+Genova/Chiesa+del+Ges%C3%B9,+Genova/Porta+Soprana,+Genova"
+              href="https://www.google.com/maps/dir/44.41416,8.928363/44.412476,8.928153/44.413348,8.933036/44.411133,8.932106/44.410868,8.930216/44.407837,8.931084/44.409099,8.928607/44.40975,8.928329/44.41025,8.926672/44.407515,8.933251/44.407181,8.934036/44.408029,8.934748/44.406664,8.933015/44.405563,8.934505"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-white/60 font-bold uppercase tracking-widest text-xs hover:text-white transition-colors"
