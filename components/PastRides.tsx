@@ -19,6 +19,14 @@ const pastRides = [
       'Nearly 500 kilometres through four countries — the UK, France, Belgium, and the Netherlands. It rained every single day. Nobody stopped. Amsterdam welcomed us the only way it knows how.',
     link: 'https://strava.app.link/Fp4l1sjSr2b',
   },
+  {
+    city: 'Marseille to Genova',
+    year: '2026',
+    image: '/genova.jpeg',
+    flavour:
+      'Nearly 440 kilometres of French and Italian coastline in four days. Nearly 3,100 metres of climbing. Around 20,000 calories each. Five riders who had absolutely no business attempting this. Genova was glorious.',
+    link: 'https://www.strava.com/activities/18584748946',
+  },
 ]
 
 const containerVariants: Variants = {

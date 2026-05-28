@@ -73,11 +73,11 @@ export default function TheCharity() {
             <p>
               GOSH is a place that brings hope to children facing cancer and their families —
               through expert care, world-class research, and incredible support. As a group,
-              we aim to raise £1,000. Every kilometre we pedal from Marseille to Genoa,
+              we set out to raise £1,000 — and together we raised £1,300, exceeding our goal. Every kilometre we pedalled from Marseille to Genova,
               every hill we suffer through, is dedicated to making life better for those children.
             </p>
             <p>
-              Your donation, however small, makes a real difference. And it makes our legs
+              Thank you to everyone who donated. Your support made a real difference. And it made our legs
               hurt slightly less, psychologically.
             </p>
           </motion.div>
@@ -89,13 +89,13 @@ export default function TheCharity() {
           >
             <div className="inline-block border-2 border-white/40 px-10 py-6 mb-6">
               <div className="text-white/60 font-black uppercase tracking-widest text-xs mb-2">
-                Our Goal
+                Goal Reached
               </div>
               <div className="text-white font-black text-5xl mb-2">
-                £1,000
+                £1,300
               </div>
               <div className="text-white/70 text-sm mb-4">
-                Every pound goes directly to Great Ormond Street Hospital
+                We set a goal of £1,000 — you helped us raise £1,300
               </div>
               <a
                 href={JUSTGIVING_URL}
@@ -103,7 +103,7 @@ export default function TheCharity() {
                 rel="noopener noreferrer"
                 className="text-white/80 text-sm font-bold hover:text-white transition-colors underline underline-offset-4"
               >
-                See how much we&apos;ve raised so far &rarr;
+                See the fundraiser on JustGiving &rarr;
               </a>
             </div>
           </motion.div>
@@ -115,7 +115,7 @@ export default function TheCharity() {
               rel="noopener noreferrer"
               className="inline-block bg-white text-[#c21717] font-black uppercase tracking-widest px-10 py-5 text-lg border-2 border-white hover:bg-[#c21717] hover:text-white transition-all duration-200"
             >
-              Donate Now
+              See the Fundraiser
             </a>
           </motion.div>
 
