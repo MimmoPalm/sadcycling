@@ -1,5 +1,4 @@
 import Nav from '@/components/Nav'
-import AnnouncementBanner from '@/components/AnnouncementBanner'
 import Hero from '@/components/Hero'
 import WhatIsSad from '@/components/WhatIsSad'
 import TheCharity from '@/components/TheCharity'
@@ -13,7 +12,6 @@ import Footer from '@/components/Footer'
 export default function Home() {
   return (
     <>
-      <AnnouncementBanner />
       <Nav />
       <main>
         <Hero />

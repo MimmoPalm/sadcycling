@@ -71,19 +71,19 @@ export default function WeMadeIt() {
           </motion.h2>
 
           {/* Hero image */}
-          <motion.div variants={itemVariants} className="mb-16 overflow-hidden">
+          <motion.div variants={itemVariants} className="mb-16 flex justify-center">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/genova.jpeg"
               alt="SAD Cycling team arriving in Genova"
-              className="w-full max-h-[560px] object-cover"
+              className="w-full max-w-2xl mx-auto block object-contain"
             />
           </motion.div>
 
           {/* Stats */}
           <motion.div
             variants={itemVariants}
-            className="grid grid-cols-2 md:grid-cols-4 gap-0 border-2 border-[#11151C] mb-16"
+            className="grid grid-cols-1 sm:grid-cols-3 gap-0 border-2 border-[#11151C] mb-16"
           >
             <div className="p-8 border-b-2 md:border-b-0 md:border-r-2 border-[#11151C] text-center">
               <div className="text-[#c21717] font-black text-4xl mb-1">439.8</div>
@@ -97,10 +97,7 @@ export default function WeMadeIt() {
               <div className="text-[#c21717] font-black text-4xl mb-1">~20k</div>
               <div className="text-[#11151C]/60 font-black uppercase tracking-widest text-xs">calories each</div>
             </div>
-            <div className="p-8 text-center">
-              <div className="text-[#c21717] font-black text-4xl mb-1">4</div>
-              <div className="text-[#11151C]/60 font-black uppercase tracking-widest text-xs">days of suffering</div>
-            </div>
+
           </motion.div>
 
           {/* Ride breakdown */}
