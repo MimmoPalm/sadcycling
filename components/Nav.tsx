@@ -34,7 +34,7 @@ export default function Nav() {
       {/* Announcement banner */}
       <div className="w-full bg-[#11151C] text-white text-center py-2.5 px-4">
         <p className="font-black uppercase tracking-widest text-xs md:text-sm">
-          UPDATE: We made it to Genova.{' '}
+          Update: we made it to Genova and raised £1,518.{' '}
           <a href="#genova" className="underline underline-offset-4 text-[#c21717] hover:text-white transition-colors">
             Read the full report &darr;
           </a>

@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Barlow_Condensed } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
-import AnnouncementBanner from '@/components/AnnouncementBanner'
 import './globals.css'
 
 const barlow = Barlow_Condensed({
@@ -188,7 +187,6 @@ export default function RootLayout({
         />
       </head>
       <body className={`${barlow.className} antialiased`}>
-        <AnnouncementBanner />
         {children}
         <Analytics />
       </body>
