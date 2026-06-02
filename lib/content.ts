@@ -19,7 +19,7 @@ export const siteConfig = {
   trackerUrl: WAHOO_TRACKING_URL,
   socialStrava: STRAVA_URL,
   fundraisingGoal: '£10,000',
-  currentTotal: '£3,420', // TODO: Replace with live figure or embed
+  currentTotal: '£1,518', // TODO: Replace with live figure or embed
   numberOfRiders: 5,
 }
 

@@ -73,7 +73,7 @@ export default function TheCharity() {
             <p>
               GOSH is a place that brings hope to children facing cancer and their families —
               through expert care, world-class research, and incredible support. As a group,
-              we set out to raise £1,000 — and together we raised £1,300, exceeding our goal. Every kilometre we pedalled from Marseille to Genova,
+              we set out to raise £1,000 — and together we raised £1,518, exceeding our goal. Every kilometre we pedalled from Marseille to Genova,
               every hill we suffer through, is dedicated to making life better for those children.
             </p>
             <p>
@@ -92,10 +92,10 @@ export default function TheCharity() {
                 Goal Reached
               </div>
               <div className="text-white font-black text-5xl mb-2">
-                £1,300
+                £1,518
               </div>
               <div className="text-white/70 text-sm mb-4">
-                We set a goal of £1,000 — you helped us raise £1,300
+                We set a goal of £1,000 — you helped us raise £1,518
               </div>
               <a
                 href={JUSTGIVING_URL}
